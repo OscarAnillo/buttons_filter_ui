@@ -50,6 +50,10 @@ img {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
 }
+.filter:hover {
+  border: 2px solid #c59d5f;
+  background: linear-gradient(to left, red, #c59d5f);
+}
 
 /* MenuComponent */
 .menu-div {
@@ -85,4 +89,59 @@ img {
   text-align: left;
   line-height: 1.3rem;
   padding-bottom: .8em;
+}
+
+@media(min-width: 1000px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* TitleComponent */
+  .title {
+    letter-spacing: 6px;
+  }
+  .title h1 {
+    font-size: 3rem;
+    text-shadow: 0 3px 5px #271e1e;
+  }
+  .underline {
+    border-bottom: 5px solid #c59d5f;
+    width: 25%;
+  }
+  .btn-container {
+    padding-top: 2em;
+    text-align: left;
+  }
+  .filter {
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px #271e1e;
+    width: 13%;
+    margin: .5em 3em;
+  }
+  .filter:hover {
+    cursor: pointer;
+  }
+  .active {
+    border: 2px solid #fff;
+    background: linear-gradient(to left, red, orange);
+  }
+  
+  /* MenuComponent */
+  .menu-div {
+    padding-top: 1.8em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .map-item {
+    margin: 1em 0;
+    width: 30%;
+  }
+  .dish-pic {
+    width: 350px;
+  }
+  
 }

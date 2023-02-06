@@ -22,7 +22,7 @@ export const MenuComponent = ({ category }) => {
     }
   };
   return (
-    <div className="menu-div">
+    <div className="menu-main">
       <div>{displayComponent()}</div>
     </div>
   );
