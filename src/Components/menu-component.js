@@ -18,7 +18,7 @@ export const MenuComponent = ({ category }) => {
       case "Shakes":
         return <ShakesCategory />;
       default:
-        break;
+        return <AllCategories />;
     }
   };
   return (
